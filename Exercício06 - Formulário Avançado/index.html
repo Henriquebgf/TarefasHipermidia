@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06 - Formulário Avançado</title>
+</head>
+<body>
+
+  <form >
+    <fieldset>
+      <legend>Dados Pessoais:</legend>
+      <label for="fname">Nome:</label>
+      <input type="text" id="fname" name="fname" style="border-style:inset;" >
+  
+      <label for="lname">Sobrenome:</label>
+      <input type="text" id="lname" name="lname" style="border-style:inset;"><br><br>
+  
+      <label >Nascimento:</label>
+      <input  type="text" id="dia" name="dia" placeholder="dd" style="width:30px; border-style:inset;" >
+      <input type="text" id="mes" name="mes" placeholder="mm" style="width:30px; border-style:inset;"  >
+      <input type="text" id="ano" name="ano" placeholder="aaaa" style="width:45px; border-style:inset;"><br><br>
+  
+      
+      <label for="lname">RG:</label>
+      <input type="text" style="width:40px; border-style:inset;" ><br><br>
+      <label for="lname">CPF:</label>
+      <input type="text" style="width:90px; border-style:inset;" > -
+      <input type="text" style="width:40px; border-style:inset;" >
+    </fieldset>      
+  </form>
+ 
+
+        <form action="/action_page.php">
+          <fieldset>
+            <legend>Dados de Endereço:</legend>
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" name="rua" style="border-style:inset; border-style:inset;">
+        
+            <label for="num">Numero:</label>
+            <input type="number" id="num" name="num" style="width:60px; border-style:inset;" ><br><br>
+        
+            <label for="bairro" >Bairro:</label>
+            <input  type="text" id="bairro" name="bairro" style="width:40px; border-style:inset;" ><br><br>
+            <Label>Estado:
+              <select name="select">
+                <option value="valor1">Acre</option>
+                <option value="valor2" selected>Rio de janeiro</option>
+                <option value="valor3">Bahia</option>
+              </select><br><br>
+              <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" style="border-style:inset; border-style:inset;">
+            </Label><br><br>
+            <label for="lname">CEP:</label>
+      <input type="text" style="width:90px; border-style:inset;"  > -
+      <input type="text" style="width:40px; border-style:inset;"  >
+
+        
+          </fieldset>      
+        </form>
+
+        
+
+          <form>
+            <fieldset>
+              <legend>Dados de login:</legend>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email"  style="width:40px; border-style:inset;">
+          
+              <label for="lname">Sobrenome:</label>
+              <input type="text" id="lname" name="lname"  style="width:40px; border-style:inset;"><br><br>
+          
+              <label >Nascimento:</label>
+              <input  type="text" id="dia" name="dia" style="width:30px; border-style:inset;">
+              <input type="text" id="mes" name="mes" style="width:30px; border-style:inset;"  >
+              <input type="text" id="ano" name="ano" style="width:45px; border-style:inset;"><br>
+          
+            </fieldset>      
+          </form>
+              
+</body>
+</html>
