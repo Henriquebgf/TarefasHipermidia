@@ -1,0 +1,16 @@
+main h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Arial, Helvetica;
+}
+
+main {
+    background-image: url('https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg') ;
+}
+
+article {
+    background-color: #00ACFF; 
+}
+
+article p{
+    color: aliceblue;
+    text-align: center;
+}
