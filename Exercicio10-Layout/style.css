@@ -1,0 +1,54 @@
+header {
+  background: grey;
+  width: 100%;
+  padding-left: 5px;
+  color: white;
+  margin-bottom: -22px;
+}
+
+nav {
+  position: relative;
+  float: left;
+  width: 140px;
+  height: 420px;
+  padding: 0 auto auto 0;
+
+  border-right: 1px solid gray;
+}
+
+li {
+  position: relative;
+  left: -30px;
+  width: 120px;
+  height: 50px;
+  display: block;
+  margin-top: 1px;
+  background: #d3d3d3;
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 50px;
+}
+
+a {
+  padding-left: 10px;
+  color: black;
+  text-decoration: none;
+  right: auto;
+}
+
+section {
+  position: absolute;
+
+  left: 150px;
+  width: 80%;
+  height: 100%;
+  padding-left: 15px;
+}
+footer {
+  height: 30px;
+  clear: both;
+  background: grey;
+  color: white;
+  padding-left: 5px;
+  line-height: 30px;
+}
