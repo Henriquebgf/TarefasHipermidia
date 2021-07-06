@@ -1,0 +1,407 @@
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+}
+
+header .container {
+  display: flex;
+  height: 150px;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+
+.col-md-5 {
+  background-color: #ffffff;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.col-md-5 img {
+  height: 140px;
+  width: auto;
+  padding-left: 20px;
+}
+
+.col-md-7 {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 5px;
+}
+
+.col-md-7 nav ul {
+  float: right;
+  flex: 1;
+}
+.col-md-7 nav li {
+  display: inline;
+  padding-right: 10px;
+  padding-left: 10px;
+  list-style-type: none;
+  border-right: 1px solid black;
+}
+
+.col-md-7 nav li :hover {
+  background-color: #3665ac;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+#last_link {
+  margin-right: 0px;
+}
+#text_a {
+  display: inline;
+  margin: 0px;
+  flex-direction: row;
+  border: none;
+  align-items: center;
+  float: right;
+  padding: 0px;
+}
+
+.container_A {
+  margin-left: 10px;
+  padding: 0px;
+  display: flex;
+  align-items: baseline;
+}
+
+#left_a {
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+#center_a {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+#right_a {
+  text-align: center;
+  width: 20px;
+  color: #ffffff;
+  background-color: black;
+  margin-left: 5px;
+  padding-right: px;
+  padding-left: 0px;
+}
+
+#search1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 337px;
+  right: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+  height: 27px;
+}
+
+.search_wrapper {
+}
+.search_box {
+  margin-right: -5px;
+}
+
+.search_box {
+  height: 22px;
+}
+
+.button {
+  width: auto;
+  height: 27px;
+  border: none;
+  border-radius: 2px;
+  margin-right: 0px;
+  box-shadow: 2px;
+  box-shadow: 2px 2px 0px black;
+  background-color: #de3b3b;
+}
+.button1 {
+  margin-right: 20px;
+}
+
+.button2 {
+}
+
+.advanced-search {
+  margin-top: 3px;
+}
+.header_topic {
+  margin-top: 20px;
+  width: 700px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-column-gap: 80px;
+}
+div {
+  border-radius: 3px;
+}
+
+.topic-header {
+  width: 160px;
+  height: 20px;
+  margin-left: 0px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 2px;
+  background-color: #3665ac;
+  color: aliceblue;
+}
+
+main {
+  height: 450px;
+  padding-top: 10px;
+}
+
+.container_main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 650px;
+}
+
+.section {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article1 {
+  flex: 2;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.article1_top {
+  flex: 1;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.article1_top .left {
+  float: left;
+}
+
+.article1_top .left h2 {
+  display: inline;
+}
+.article1_top .right {
+  float: right;
+}
+
+.article1_main {
+  flex: 10;
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.article1_main_left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.article1_main_left .article1_main_left_img {
+  flex: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+}
+.article1_main_left .article1_main_left_img img {
+  max-width: 80%;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+
+.article1_main_left .article1_main_left_text {
+  flex: 1;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: end;
+}
+
+.article1_main_right {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+}
+
+.article1_main_right .text1 {
+  flex: 1;
+
+  margin-left: 5px;
+
+  padding: 10px;
+  text-align: start;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+.article1_main_right .text2 {
+  flex: 1;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: start;
+}
+.article2 {
+  flex: 1;
+  background-color: #3665ac;
+  margin-top: 20px;
+}
+.article3 {
+  flex: 1;
+  background-color: #daa520;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside .article1 {
+  background-image: url("https://swall.teahub.io/photos/small/20-204124_real-madrid-wallpaper-real-madrid-iphone-6.jpg");
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.aside .article2,
+.aside .article3 {
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.aside #text_child1 {
+  padding-left: 10px;
+  text-indent: 2px;
+  text-align: left;
+
+  color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#child1 {
+  flex: 1;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+}
+
+#image_child1 {
+  background-color: black;
+}
+#image_child1 img {
+  height: 150px;
+  width: 100%;
+}
+#text_child1 {
+  padding-left: 20px;
+  text-align: left;
+  text-indent: 2px;
+  color: #ffffff;
+}
+
+#child2 {
+  flex: 2;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.topic {
+  flex: 1;
+  height: 30px;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid black;
+  background-color: #3665ac;
+  display: flex;
+  align-items: center;
+}
+
+#child3 {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+#child3 h1 {
+  display: inline;
+  padding-top: 0px;
+}
+#child4 {
+  flex: 1;
+  background-color: #cac5c5;
+  border: 1px solid black;
+  padding-top: 0px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#child4 ul {
+  padding-left: 5px;
+}
+
+#child4 ul li {
+  list-style-type: none;
+}
+
+hr {
+  margin-top: 25px;
+}
+
+footer {
+  padding-bottom: 20px;
+}
+
+footer .container {
+  height: 20px;
+
+  margin-top: 15px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container nav ul {
+  float: left;
+  flex: 1;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+footer .container nav li {
+  display: inline;
+  padding-right: 10px;
+  padding-left: 10px;
+  list-style-type: none;
+  border-right: 1px solid black;
+}
+
+.frame-left .no-border {
+  border-right: none;
+}
+
+.frame-right .no-border {
+  border-right: none;
+}
