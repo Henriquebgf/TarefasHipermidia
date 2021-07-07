@@ -1,7 +1,8 @@
 body {
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #ffffff;
+  border-color: aliceblue;
+  font-size: 16px;
 }
 
 header .container {
@@ -13,7 +14,7 @@ header .container {
 
 .col-md-5 {
   background-color: #ffffff;
-  flex: 2;
+  flex: 3;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -25,7 +26,7 @@ header .container {
 }
 
 .col-md-7 {
-  flex: 0;
+  flex: 9;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -43,7 +44,9 @@ header .container {
   list-style-type: none;
   border-right: 1px solid black;
 }
-
+.col-md-7 nav li a {
+  color: rgb(30, 106, 187);
+}
 .col-md-7 nav li :hover {
   background-color: #3665ac;
   border-radius: 2px;
@@ -119,7 +122,7 @@ header .container {
   margin-right: 0px;
   box-shadow: 2px;
   box-shadow: 2px 2px 0px black;
-  background-color: #de3b3b;
+  background-color: #c3c3c3;
 }
 .button1 {
   margin-right: 20px;
@@ -131,6 +134,10 @@ header .container {
 .advanced-search {
   margin-top: 3px;
 }
+.advanced-search a {
+  color: rgb(30, 106, 187);
+}
+
 .header_topic {
   margin-top: 20px;
   width: 700px;
@@ -149,8 +156,12 @@ div {
   border: 1px solid black;
   text-align: center;
   padding-top: 2px;
-  background-color: #3665ac;
+  background-image: linear-gradient(rgb(67, 95, 130), rgb(63, 55, 82));
   color: aliceblue;
+}
+.topic-header a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 main {
@@ -173,48 +184,64 @@ main {
 
 .article1 {
   flex: 2;
-  background-color: aliceblue;
+  background-color: #daa520;
   display: flex;
   flex-direction: column;
 }
 
-.article1_top {
+.article_top {
   flex: 1;
   padding: 10px;
   margin-left: 5px;
   margin-right: 5px;
 }
-.article1_top .left {
+.article_top .left,
+.article2 .main .text .left {
   float: left;
 }
 
-.article1_top .left h2 {
+.article_top .left h2 {
   display: inline;
 }
-.article1_top .right {
+.article_top .right,
+.article2 .main .text .right {
   float: right;
+  display: flex;
+  align-items: center;
+}
+.article_top .right a {
+  color: #000000;
 }
 
-.article1_main {
+.icon {
+  display: inline-block;
+  margin-left: 5px;
+  height: 16px;
+  width: 16px;
+  background-image: url("assets/arrow_next.png");
+  background-size: cover;
+}
+
+.article_main {
   flex: 10;
   display: flex;
   margin-left: 5px;
   margin-right: 5px;
 }
-.article1_main_left {
+.article_main_left {
   flex: 3;
   display: flex;
   flex-direction: column;
 }
 
-.article1_main_left .article1_main_left_img {
+.article_main_left .article_main_left_img {
   flex: 1;
   margin-left: 5px;
   margin-right: 5px;
   display: flex;
   justify-content: center;
 }
-.article1_main_left .article1_main_left_img img {
+.article_main_left .article_main_left_img img {
   max-width: 80%;
   max-height: 120px;
   width: auto;
@@ -222,7 +249,7 @@ main {
   align-items: center;
 }
 
-.article1_main_left .article1_main_left_text {
+.article_main_left .article_main_left_text {
   flex: 1;
   padding: 10px;
   margin-left: 5px;
@@ -230,35 +257,77 @@ main {
   text-align: end;
 }
 
-.article1_main_right {
+.article_main_right {
   flex: 9;
   display: flex;
   flex-direction: column;
 }
 
-.article1_main_right .text1 {
+.article_main_right .text1 {
   flex: 1;
-
   margin-left: 5px;
-
-  padding: 10px;
+  padding: 0px 10px 0 10px;
   text-align: start;
   text-align: justify;
   line-height: 1.2;
 }
 
-.article1_main_right .text2 {
+.article_main_right .text2 {
   flex: 1;
   padding: 10px;
   margin-left: 5px;
   margin-right: 5px;
   text-align: start;
 }
+
 .article2 {
   flex: 1;
   background-color: #3665ac;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
+
+.article2 .main .text {
+  display: block;
+}
+.article2 .main {
+  flex: 2.8;
+}
+
+.article2 .main .text {
+  padding: 0px 10px 2px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.icon-news {
+  display: inline-block;
+  margin-left: 5px;
+  height: 16px;
+  width: 16px;
+  background-image: url("assets/news.png");
+  background-size: cover;
+}
+
+.icon-up {
+  display: inline-block;
+  margin-left: 5px;
+  height: 16px;
+  width: 16px;
+  background-image: url("assets/arrow_up.png");
+  background-size: cover;
+}
+.icon-down {
+  display: inline-block;
+  margin-left: 5px;
+  height: 16px;
+  width: 16px;
+  background-image: url("assets/arrow_down.png");
+  background-size: cover;
+}
+
 .article3 {
   flex: 1;
   background-color: #daa520;
@@ -266,14 +335,46 @@ main {
   margin-bottom: 10px;
 }
 
+.section .article3 {
+  flex: 1;
+  background-color: #daa520;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section .article3 .article_main {
+  flex: 10;
+}
+
+.icon-calendar {
+  display: inline-block;
+  margin-left: 5px;
+  height: 16px;
+  width: 16px;
+  background-image: url("assets/calendar.png");
+  background-size: cover;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000000;
+  padding-left: 4px;
+}
+
+.section a {
+  color: #000000;
+}
+/* área lateral direita ---------------------------------*/
+
 .aside {
   display: flex;
   flex-direction: column;
 }
 
 .aside .article1 {
-  background-image: url("https://swall.teahub.io/photos/small/20-204124_real-madrid-wallpaper-real-madrid-iphone-6.jpg");
-
+  background-image: url("assets/champions13.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -281,9 +382,16 @@ main {
 
 .aside .article2,
 .aside .article3 {
-  background-color: #000000;
+  background-image: linear-gradient(rgb(31, 57, 90), rgb(30, 25, 43));
   display: grid;
   grid-template-columns: 1fr 1.5fr;
+  text-align: justify;
+  align-items: center;
+}
+.aside .article2 img,
+.aside .article3 img {
+  height: auto;
+  width: auto;
 }
 
 .aside #text_child1 {
@@ -301,7 +409,8 @@ main {
 
 #child1 {
   flex: 1;
-  background-color: #000000;
+  background-image: linear-gradient(rgb(31, 57, 90), rgb(30, 25, 43));
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 1px solid black;
@@ -335,7 +444,7 @@ main {
   width: 100%;
   margin-top: 10px;
   border: 1px solid black;
-  background-color: #3665ac;
+  background-image: linear-gradient(rgb(236, 239, 242), rgb(92, 87, 102));
   display: flex;
   align-items: center;
 }
@@ -351,7 +460,7 @@ main {
 }
 #child4 {
   flex: 1;
-  background-color: #cac5c5;
+  background-image: linear-gradient(rgb(236, 239, 242), rgb(92, 87, 102));
   border: 1px solid black;
   padding-top: 0px;
   margin-top: 5px;
@@ -396,6 +505,9 @@ footer .container nav li {
   padding-left: 10px;
   list-style-type: none;
   border-right: 1px solid black;
+}
+footer .container nav li a {
+  color: rgb(30, 106, 187);
 }
 
 .frame-left .no-border {
