@@ -104,8 +104,6 @@ header .container {
   height: 27px;
 }
 
-.search_wrapper {
-}
 .search_box {
   margin-right: -5px;
 }
@@ -128,9 +126,6 @@ header .container {
   margin-right: 20px;
 }
 
-.button2 {
-}
-
 .advanced-search {
   margin-top: 3px;
 }
@@ -146,7 +141,7 @@ header .container {
   grid-column-gap: 80px;
 }
 div {
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .topic-header {
@@ -406,13 +401,13 @@ main {
 .aside .article3 img {
   height: auto;
   width: auto;
+  border-radius: 3px;
 }
 
 .aside #text_child1 {
   padding-left: 10px;
   text-indent: 2px;
   text-align: left;
-
   color: #ffffff;
 }
 
