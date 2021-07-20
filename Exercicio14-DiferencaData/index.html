@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Validador de Email</title>
+    <title>Tempo transcorrido</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -16,23 +16,28 @@
   <body>
     <br /><br /><br />
     <div align="center">
-      <p><h1>Testar validação do email</h1></p>
-      <form>
-        <label for="email">E-mail</label>
-        <input type="text" id="email" style="width: 300px" />
+      <p><h1>Verificiar tempo transcorrido </h1></p>
+      <form
+        style="
+          background-color: #d3d3d3;
+          height: 200px;
+          width: 300px;
+          border-radius: 15px;
+        "
+      >
+        <label for="data" style="font-size: 20px">Data</label><br />
+        <input type="date" id="data" /><br /><br />
 
         <input
           type="button"
           class="btn btn-primary"
-          value="Validar Email"
-          onclick="validateEmail(form.email.value)"
+          value="Tempo transcorrido"
+          onclick="runscript(form.data.value)"
         />
       </form>
-
       <br><br><br>
       
       <p>Autor: Luis Henrique B G Filho</p>
     </div>
-   
   </body>
 </html>
