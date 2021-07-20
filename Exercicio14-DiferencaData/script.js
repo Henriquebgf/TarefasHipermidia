@@ -50,5 +50,5 @@ function runscript(dString){
 var d1 = new Date(dString);
 var d2 = new Date();
 
-alert('O tempo trasncorrido a '+DateDiff.inDays(d1, d2)+" dias, "+DateDiff.inMonths(d1, d2)+" meses, "+DateDiff.inYears(d1, d2)+" anos");
+alert('tempo trasncorrido : '+DateDiff.inDays(d1, d2)+" dias, "+DateDiff.inMonths(d1, d2)+" meses, "+DateDiff.inYears(d1, d2)+"e anos");
 }
