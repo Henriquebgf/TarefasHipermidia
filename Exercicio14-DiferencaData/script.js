@@ -20,7 +20,7 @@ var DateDiff = {
         var t2 = d2.getTime();
         var t1 = d1.getTime();
 
-        return parseInt((t2-t1)/(24*3600*1000));
+        return parseInt((t2-t1)/(24*3600*1000))-1;
     },
 
     inWeeks: function(d1, d2) {
@@ -50,5 +50,5 @@ function runscript(dString){
 var d1 = new Date(dString);
 var d2 = new Date();
 
-alert('tempo trasncorrido : '+DateDiff.inDays(d1, d2)+" dias, "+DateDiff.inMonths(d1, d2)+" meses, "+DateDiff.inYears(d1, d2)+"e anos");
+alert('tempo trasncorrido : '+DateDiff.inDays(d1, d2)+" dias, "+DateDiff.inMonths(d1, d2)+" meses e "+DateDiff.inYears(d1, d2)+" anos");
 }
